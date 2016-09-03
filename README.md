@@ -18,7 +18,39 @@ Dependency: import these go packages :
 	   github.com/astaxie/goredis
 
 
-Author : Sumitha S
 
-Date: 01 Sep 2016
+To Compile:
 
+go install <path where the nuvi-project.go is placed>
+
+for eg,
+go install github.com/sumithas2/nuvi
+
+To Run:
+
+For eg,
+go run nuvi-project.go 
+
+
+Sample Console Output:
+
+home@home:~/work/src/github.com/sumithas2/nuvi$ go run nuvi-project.go
+Given URL Redirected to: http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/
+Downloading http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/1472662644037.zip to 1472662644037.zip
+10344980 bytes downloaded.
+Downloading http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/1472662818681.zip to 1472662818681.zip
+10269573 bytes downloaded.
+
+Processing each downloaded zip file
+Extracting zip file 1472662644037.zip to 1472662644037
+Extracting Completed for  1472662644037
+Parsing each XML File inside  1472662644037
+Extracting zip file 1472662818681.zip to 1472662818681
+Extracting Completed for  1472662818681
+Parsing each XML File inside  1472662818681
+
+Improvements:
+
+-Need to add log  
+-Use Redis Hash type
+-We can add new functionality to show the news-xml contents in web page. 
