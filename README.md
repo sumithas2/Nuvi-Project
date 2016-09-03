@@ -49,8 +49,9 @@ Extracting zip file 1472662818681.zip to 1472662818681
 Extracting Completed for  1472662818681
 Parsing each XML File inside  1472662818681
 
+
 Improvements:
 
--Need to add log  
--Use Redis Hash type
--We can add new functionality to show the news-xml contents in web page. 
+Need to add log  
+Use Redis Hash type
+We can add new functionality to show the news-xml contents in web page. 
